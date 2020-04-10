@@ -31,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger d-none" href="#page-top">Highlife</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logos/navbar-brand.png"/></a>
       <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -61,11 +61,20 @@
   <!-- Header -->
   <header class="page-section h-100 d-flex align-items-center" id="home">
     <div class="container">
+      <div class="date col-6 offset-6 text-left">
+        <div class="row">
+          <h2 class="text-uppercase my-0">festival virtual</h2>
+          <h2 class="text-uppercase my-0">17 de Abril 18hs</h2>
+        </div>
+      </div>
       <div class="shape rellax" data-rellax-speed="-2">
         <img src="img/shape01.png"/>
       </div>
       <div class="iawol rellax" data-rellax-speed="1">
         <div class="inner rotating"></div>
+      </div>
+      <div class="scroll rellax text-uppercase" data-rellax-speed="-0.25">
+        scroll
       </div>
     </div>
   </header>
@@ -159,9 +168,13 @@
   <section class="page-section h-100" id="live">
     <div class="swiper-container d-flex align-items-center">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url(./images/nature-1.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./images/nature-2.jpg)"></div>
-        <div class="swiper-slide" style="background-image:url(./images/nature-3.jpg)"></div>
+        <div class="swiper-slide">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/U1_Knnpo_Ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+        </div>
+        <div class="swiper-slide">
+        </div>
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
@@ -171,38 +184,47 @@
   <!-- About -->
   <section class="page-section h-100 d-flex align-items-center" id="about">
     <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et tortor quis mauris consequat ornare non eu massa. Suspendisse potenti. Integer viverra sagittis tempor. Donec semper arcu neque. Fusce iaculis interdum magna at scelerisque. Donec nec metus euismod, rhoncus leo at, scelerisque lorem.
-      </p>
+      <div class="shape d-flex align-items-center justify-content-center rellax" data-rellax-speed="-0.2">
+        <img src="img/shape02.png"/>
+      </div>
+      <div class="col-10 offset-1">
+        <h1>
+          Buscamos ayudar a los artistas,
+          quienes a raíz de la situación sanitaria
+          producto del COVID-19, quedaron sin trabajo
+          y por ende sin fuente de ingreso.
+          <br/><br/>
+          Sumate con un click acá!
+        </h1>
+      </col-10>
     </div>
   </section>
 
   
   <footer class="footer h-100 d-flex align-items-center" id="contact">
     <div class="container">
-      <!-- Footer div class="row align-items-center">
-        <div class="col-md-12">
-          <p class="text-white">
-            let's talk...
-          </p>
-          <h3 class="text-white py-2">
+      <div class="row align-items-center">
+        <div class="col-md-3 offset-md-3">
+          <div class="iawol" style="width: 260px; height: 260px;"><div class="inner rotating"></div></div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-uppercase">
+            Contact us
+          </h3>
+          <p class="text-uppercase">
             info@tremendo.com<br/>
             + 54 9 11 3796 6019
+          </p>
+          <h3 class="text-uppercase">
+            Follow us
           </h3>
+          <p class="text-uppercase">
+            <a href="#">Instagram</a><br/>
+            <a href="#">Soundcloud</a><br/>
+            <a href="#">Facebook</a>
+          </p>
         </div>
       </div>
-      <div class="row align-items-center">
-        <div class="col-md-12">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">instagram</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">facebook</a>
-            </li>
-          </ul>
-        </div>
-      </div>-->
     </div>
   </footer>
 

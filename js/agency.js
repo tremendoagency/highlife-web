@@ -34,7 +34,7 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset().top > 250) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
@@ -68,8 +68,8 @@
       depth: 100,
       modifier: 1,
       slideShadows : true,
-      loop: true
     },
+    loop: true,
     pagination: {
       el: '.swiper-pagination',
     },
