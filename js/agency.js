@@ -25,16 +25,25 @@
     target: '#mainNav',
     offset: 56
   });
-  
-  //$("p").hover(function(){
-  //  $(this).css("background-color", "yellow");
-  //  }, function(){
-  //  $(this).css("background-color", "pink");
-  //});
+
+  $('#liveNav li a').on( "click", function(event){
+    event.preventDefault();
+    live.slideTo($(this).attr('data-slide'));
+  });
+
+  $('.lightmode').on( "click", function(event){
+    var $el = $('body').toggleClass('night');
+    if ($el.hasClass('night')) {
+      $('.chat iframe').attr('src', 'https://www.twitch.tv/embed/highlifebsas/chat?darkpopout');
+    }
+    else{
+      $('.chat iframe').attr('src', 'https://www.twitch.tv/embed/highlifebsas/chat');
+    }
+  });
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 250) {
+    if ($("#mainNav").offset().top > 150) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
@@ -47,7 +56,7 @@
 
   //swiper
 
-  var artists = new Swiper('#lineup .swiper-container', {
+  var artists = new Swiper('#guide .swiper-container', {
     centeredSlides: true,
     slidesPerView: 'auto',
     loop: true,
@@ -63,17 +72,35 @@
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 75,
-      stretch: 50,
+      rotate: 70,
+      stretch: 0,
       depth: 100,
       modifier: 1,
       slideShadows : true,
     },
-    loop: true,
     pagination: {
       el: '.swiper-pagination',
-    },
+    }
   });
-  
+  live.on('slideChangeTransitionStart', function () {
+    $('#liveNav li').removeClass('active');
+    $('#liveNav li').eq(live.realIndex).addClass('active');
+  });
+
+  $.instagramFeed({
+    'username': 'highlifebsas',
+    'tag': 'highlifevirtual',
+    'container': "#instafeed",
+    'display_profile': false,
+    'display_gallery': true,
+    'items': 3,
+    'items_per_row': 3,
+    'margin': 0
+  });
+  $(window).on('load', function () {
+    $('.loader-wrapper').animate({top: '-100%'}, 10, function() {
+      $('#loader').animate({top: '-100%'}, 300);
+    });
+  });
 
 })(jQuery); // End of use strict
