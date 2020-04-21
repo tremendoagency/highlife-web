@@ -15,9 +15,17 @@
     }
   });
 
+  // Makes shapes floats
+  var rellax = new Rellax('.rellax');
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
+    $('.mobile-navbar').removeClass('show');
+  });
+
+  $('.navbar-toggler').click(function() {
+    $('.mobile-navbar').toggleClass('show');
+    $('.navbar-toggler i').toggleClass('fa-times');
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
@@ -38,17 +46,5 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-
-  //swiper
-
-  var artists = new Swiper('#guide .swiper-container', {
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
 
 })(jQuery); // End of use strict
