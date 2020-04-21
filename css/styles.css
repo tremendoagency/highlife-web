@@ -204,6 +204,8 @@ img::-moz-selection {
 /* NAVBAR */
 
 #mainNav .navbar-brand img{
+  width: 41px;
+  height: 41px;
   transition: all 0.3s ease;
 }
 #mainNav.navbar-shrink .navbar-brand img{
