@@ -50,8 +50,8 @@
       'margin': 0
     });
     $(window).on('load', function () {
-      $('.loader-wrapper').animate({top: '-100%'}, 10, function() {
-        $('#loader').animate({top: '-100%'}, 300);
+      $('.loader-wrapper').animate({top: '-100%'}, 2000, function() {
+        $('#loader').animate({top: '-100%'}, 2000);
       });
     });
   
