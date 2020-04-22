@@ -77,7 +77,7 @@ h6{
 }
 .container{
   position: relative;
-  width: 72%;
+  width: 90%;
 }
 .rellax{
   position: absolute;
@@ -198,6 +198,7 @@ img::-moz-selection {
   border-radius: 50%;
 }
 .page-section {
+  min-height: 100%;
   position: relative;
 }
 
