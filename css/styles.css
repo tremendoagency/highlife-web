@@ -294,7 +294,7 @@ nav .nav-item a:hover:after, nav .nav-item.active a:after {
   height: 70% !important;
   width: 72%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center center;
   background-size: cover;
   background-image:url(../img/day.jpg);
@@ -338,7 +338,7 @@ nav .nav-item a:hover:after, nav .nav-item.active a:after {
 
 #guide{
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center center;
   background-size: cover;
   background-image:url(../img/day.jpg);
@@ -496,6 +496,9 @@ body.night .noshift{
   .iawol{
     width: 220px;
     height: 220px;
+  }
+  #home .container, #guide{
+    background-attachment: fixed;
   }
   #home .date{
     top: 80%;
