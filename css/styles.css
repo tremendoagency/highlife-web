@@ -292,6 +292,7 @@ nav .nav-item a:hover:after, nav .nav-item.active a:after {
   text-align: center;
   color: #000;
   height: 70% !important;
+  width: 72%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -521,7 +522,7 @@ body.night .noshift{
   nav{
     height: 12.5%;
   }
-  .container{
+  .container, #home .container{
     width: 100%;
   }
   h1{
