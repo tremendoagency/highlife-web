@@ -92,27 +92,30 @@
           <div class="container">
             <div class="row">
               <div class="col-12 pb-3 text-center text-primary">
-                <h1>FOOD & DRINKS</h1>
+                <h3>FOOD & DRINKS</h3>
               </div>
             </div>
             <div class="row">
-              <div class="col-8 offset-2">
+              <div class="col-12 col-md-10 offset-md-1">
                 <div class="row">
-                  <div class="col-4 text-center">
+                  <a class="col-6 col-md-3 text-center" href="https://api.whatsapp.com/send?phone=5491132552270&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
                     <img class="img-fluid" src="img/logos/lardo_rosemary.png"/>
-                  </div>
-                  <div class="col-4 text-center">
+                  </a>
+                  <a class="col-6 col-md-3 text-center" href="https://api.whatsapp.com/send?phone=5491136190077&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
                     <img class="img-fluid" src="img/logos/atte.png"/>
-                  </div>
-                  <div class="col-4 text-center">
+                  </a>
+                  <a class="col-6 col-md-3 text-center"href="https://api.whatsapp.com/send?phone=5491163372143&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                    <img class="img-fluid" src="img/logos/zetta.png"/>
+                  </a>
+                  <a class="col-6 col-md-3 text-center"href="https://www.appbar.com.ar/producto/132?utm_source=external&utm_medium=beers&utm_campaign=bud-always-on&utm_term=230420" target="_blank">
                     <img class="img-fluid" src="img/logos/budweiser.png"/>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-8 offset-2 pt-4 text-center">
-                <p class="text-primary">Hacé tu pedido por teléfono con el código: <span class="text-bold">HighlifeVirtual</span></p>
+              <div class="col-12 col-md-8 offset-md-2 pt-4 text-center">
+                <p class="text-primary small mb-0">Obtené tu descuento especial mencionando <span class="text-bold">Highlife</span></p>
               </div>
             </div>
           </div>
@@ -121,37 +124,79 @@
           <div class="container">
             <div class="row">
               <div class="col-12 text-center">
-                <h1>DANCEFLOOR</h1>
+                <h3 class="mb-4">DANCEFLOOR</h3>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 text-center">
-                <p>Hacé tu pedido via Rappi usando el código #HighlifeVirtual</p>
+              <div class="col-12 col-md-6 offset-md-3">
+                <div class="row">
+                  <a class="col-10 offset-1 col-md-4 offset-md-4 text-center" href="#">
+                    <img class="img-fluid img-thumbnail rounded-circle w-100 noshift" src="img/logos/zoom.png"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-8 offset-md-2 pt-4 text-center">
+                <p class="text-primary small mb-0">Toca el botón para entrar a zoom</p>
               </div>
             </div>
           </div>
         </div>
         <div class="swiper-slide text-uppercase d-flex align-items-center">
           <div class="container">
-            <div class="col-12">
-              <div class="row noshift"><div id="instafeed"></div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <h3 class="mb-4">PHOTOBOOTH</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-10 offset-1" id="instafeed"></div>
             </div>
             <div class="row pt-4 justify-content-center d-flex">
               <p class="small">Compartí tu experiencia en instagram con el hashtag #HighlifeVirtual</p>
             </div>
           </div>
         </div>
+        <div class="swiper-slide text-uppercase d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h3 class="mb-4">DONATE</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 offset-md-3">
+                <div class="row">
+                  <div class="col-6 text-center">
+                    <img class="img-fluid img-thumbnail" src="img/mp_qr.png"/>
+                    <p class="small pt-2">Mercadopago</p>
+                  </div>
+                  <div class="col-6 text-center">
+                    <img class="img-fluid img-thumbnail w-100" src="img/paypal_qr.png"/>
+                    <p class="small pt-2">Paypal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-8 offset-md-2 pt-4 text-center">
+                <p class="text-primary small mb-0">Agradecemos tu colaboración con los artistas</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
   </section>
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/swiper.min.js"></script>
-  <script src="js/jquery.instagramFeed.min.js"></script>
+  <script src="js/jquery.instagramFeed.js"></script>
   <script src="js/live.js"></script>
 
 </body>

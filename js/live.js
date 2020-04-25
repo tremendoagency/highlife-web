@@ -32,6 +32,10 @@
       },
       pagination: {
         el: '.swiper-pagination',
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true
       }
     });
     live.on('slideChangeTransitionStart', function () {
@@ -41,13 +45,13 @@
   
     $.instagramFeed({
       'username': 'highlifebsas',
-      'tag': 'highlifevirtual',
+      //'tag': 'highlifevirtual',
       'container': "#instafeed",
       'display_profile': false,
       'display_gallery': true,
-      'items': 3,
-      'items_per_row': 3,
-      'margin': 0
+      'items': 4,
+      'items_per_row': 4,
+      'margin': 0,
     });
     $(window).on('load', function () {
       $('.loader-wrapper').animate({top: '-100%'}, 2000, function() {

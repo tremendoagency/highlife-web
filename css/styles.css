@@ -421,6 +421,13 @@ nav .nav-item a:hover:after, nav .nav-item.active a:after {
 #live .swiper-pagination-bullet-active{
   background: #000;
 }
+#live .dancefloor-btn{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image:url(../img/dancefloor.png.jpg);
+}
 
 #footer{
   width: 100%;
