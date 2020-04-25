@@ -15,6 +15,11 @@
         $('.chat iframe').attr('src', 'https://www.twitch.tv/embed/highlifebsas/chat');
       }
     });
+
+    $('.navbar-toggler').click(function() {
+      $('.mobile-navbar').toggleClass('show');
+      $('.navbar-toggler i').toggleClass('fa-times');
+    });
   
     //swiper
   
@@ -35,12 +40,15 @@
       },
       keyboard: {
         enabled: true,
-        onlyInViewport: true
+        onlyInViewport: false
       }
     });
     live.on('slideChangeTransitionStart', function () {
       $('#liveNav li').removeClass('active');
       $('#liveNav li').eq(live.realIndex).addClass('active');
+    });
+    live.on('slideChangeTransitionEnd', function () {
+      var acs = document.querySelectorAll('.swiper-slide-active')[0];
     });
   
     $.instagramFeed({

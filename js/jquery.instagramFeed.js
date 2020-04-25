@@ -165,7 +165,7 @@
                             caption = (is_tag ? data.name : data.username) + " image " + i;
                         }
 
-                        html += "<a href='" + url +"' class='col-3 instagram-" + type_resource + "' rel='noopener' target='_blank'>";
+                        html += "<a href='" + url +"' class='col-6 col-md-3 pb-4 pb-md-0 instagram-" + type_resource + "' rel='noopener' target='_blank'>";
                         html += "<img class='img-fluid' src='" + image + "' alt='" + escape_string(caption) + "'/>";
                         html += "</a>";
                     }

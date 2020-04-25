@@ -63,7 +63,10 @@ p, h1, h2, h3, h4, h5, h6{
   font-family: 'GT-America-Expanded-Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: #000;
 }
-h1{
+p{
+  font-size: 0.5rem;
+}
+h1, h3{
   font-size: 1rem;
 }
 h4{
@@ -204,7 +207,7 @@ img::-moz-selection {
 
 /* NAVBAR */
 
-#mainNav .navbar-brand img{
+.navbar-brand img{
   width: 41px;
   height: 41px;
   transition: all 0.3s ease;
@@ -400,8 +403,8 @@ nav .nav-item a:hover:after, nav .nav-item.active a:after {
 #live .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 320px;
-  height: 480px;
+  width: 280px;
+  height: 367px;
   background-color: #fff;
 }
 #live .video, #live .chat{
@@ -441,6 +444,9 @@ nav .nav-item a:hover:after, nav .nav-item.active a:after {
 
 .custom-control{
   cursor: pointer;
+}
+.custom-switch{
+  padding: 0 1rem;
 }
 
 .custom-control label{
@@ -514,6 +520,9 @@ body.night .noshift{
     width: 100%;
     margin-top: -35px;
   }
+  p{
+    font-size: 0.75rem;
+  }
   h1{
     font-size: 2.25rem;
   }
@@ -582,8 +591,8 @@ body.night .noshift{
     font-size: 1.5rem;
   }
   #live .swiper-slide {
-    width: 1080px;
-    height: 607px;
+    width: 1140px;
+    height: 475px;
   }
 }
 .swiper-button-next{
