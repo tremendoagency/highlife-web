@@ -52,8 +52,8 @@
     });
   
     $.instagramFeed({
-      'username': 'highlifebsas',
-      //'tag': 'highlifevirtual',
+      //'username': 'highlifebsas',
+      'tag': 'highlifevirtual',
       'container': "#instafeed",
       'display_profile': false,
       'display_gallery': true,
