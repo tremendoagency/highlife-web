@@ -24,17 +24,11 @@
     //swiper
   
     var live = new Swiper('#live .swiper-container', {
-      effect: 'coverflow',
+      speed: 600,
+      parallax: true,
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 70,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
+      slidesPerView: '1',
       pagination: {
         el: '.swiper-pagination',
       },
