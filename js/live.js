@@ -1,9 +1,11 @@
 (function($) {
     "use strict"; // Start of use strict
   
-    $('#liveNav li a').on( "click", function(event){
+    $('#liveNav li a, .mobile-navbar a').on( "click", function(event){
       event.preventDefault();
       live.slideTo($(this).attr('data-slide'));
+      $('.mobile-navbar').removeClass('show');
+      $('.navbar-toggler i').removeClass('fa-times');
     });
   
     $('.lightmode').on( "click", function(event){

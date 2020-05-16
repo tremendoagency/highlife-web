@@ -249,7 +249,7 @@ nav.navbar{
  padding: 0 !important;
 }
 nav .navbar-brand{
-  margin: 0 !important;
+  margin: 0 0 0 30px !important;
   padding: 0 !important;
 }
 nav .navbar-nav .nav-link {
@@ -302,7 +302,7 @@ nav .nav-item a:hover:after, nav .nav-item.active a:after {
   font-size: 1.5rem;
 }
 .mobile-navbar a:hover, .mobile-navbar a.active{
-  color: #f5b236;
+  color: #e5678b;
 }
 
 .mobile-navbar .closebtn {
@@ -589,6 +589,9 @@ body.night .noshift{
   }
   .dl-3{
     margin-left: 12rem !important;
+  }
+  nav .navbar-brand{
+    margin: 0 !important;
   }
   #mainNav .navbar-brand img{
     opacity: 0;
