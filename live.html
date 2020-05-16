@@ -9,7 +9,7 @@
   <title>#HighlifeVirtual</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="css/swiper.min.css" rel="stylesheet">
+  <link href="vendor/plugins/swiper.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <!-- for Facebook -->
   <meta property="og:title" content="Highlife Virtual – 25 de Abril / Live 18hs"/>
@@ -21,24 +21,193 @@
 </head>
 
 <body class="" id="page-top">
-  
-  <!-- Live -->
-  <section class="page-section h-100 d-flex align-items-center text-center" id="" >
-    <div class="container">
-      <div class="col-12 col-md-10 offset-md-1">
-        <div data-type="countdown" data-id="1958038" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%">
-          <a href="//www.tickcounter.com/countdown/1958038/highlife-virtual-02" title="Highlife Virtual #02">Highlife Virtual #02</a>
-          <a href="//www.tickcounter.com/" title="Countdown">Countdown</a>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-wrapper position-absolute d-flex justify-content-center align-items-center">
+      <div class="loader-inner d-flex align-items-center">
+          <div class="container d-flex align-items-center justify-content-center">
+              <div class="iawol"><div class="inner rotating"></div></div>
+          </div>
+      </div>
+      <div class="loader-welcome d-flex align-items-center">
+        <div class="container">
+          <div class="col-10 offset-1 text-left d-flex justify-content-center">
+            <div class="text-uppercase">
+              <h1 class="">Bajá las luces, conectá</h1>
+              <h1 class="dl-1">el sonido a los parlantes</h1>
+              <h1 class="">y preparate para muchas</h1>
+              <h1 class="dl-2">hora de baile</h1>
+            </div>
+          </div>
         </div>
-        <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
       </div>
     </div>
-  </section>
-  <div class="py-4 text-center">
-    <a class="small font-light text-secondary" href="http://tremendo.agency" target="_blank">made with <span><i class="fa fa-heart"></i></span> by tremendo</a>
   </div>
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="liveNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logos/navbar-brand.svg"/></a>
+      <button class="navbar-toggler navbar-toggler" style="position: absolute; left: 50%; margin-left: -21.75px;" type="button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3" data-slide="0" href="#">main stage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3" data-slide="1" href="#">food & drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3" data-slide="2" href="#">dancefloor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3" data-slide="4" href="#">donate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="custom-control custom-switch noshift">
+        <input type="checkbox" class="custom-control-input lightmode" id="customSwitch1">
+        <label class="d-none d-md-block custom-control-label text-uppercase" for="customSwitch1">Day/Night</label>
+        <label class="d-md-none custom-control-label text-uppercase" for="customSwitch1"></label>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-navbar h-100 d-flex align-items-center justify-content-center">
+    <div class="text-uppercase">
+      <a class="js-scroll-trigger d-block" href="#">main stage</a>
+      <a class="js-scroll-trigger d-block ml-4" href="#">food & drinks</a>
+      <a class="js-scroll-trigger d-block" href="#">dancefloor</a>
+      <a class="js-scroll-trigger d-block" href="#">donate</a>
+    </div>
+  </div>
+  
+  <!-- Live -->
+  <section class="page-section h-100 d-flex align-items-center" id="live">
+    <div class="swiper-container d-flex align-items-center">
+      <div class="parallax-bg" style="background-image:url(img/parallax.jpg)" data-swiper-parallax="-50%"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex justify-content-center align-items-center">
+          <div class="slide-content d-flex">
+            <div class="video">
+              <iframe class="noshift" width="100%" height="100%" src="https://player.twitch.tv/?channel=highlifebsas" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+            </div>
+            <div class="chat d-none d-sm-block">
+              <iframe class="noshift" width="100%" height="100%" src="https://www.twitch.tv/embed/highlifebsas/chat" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide text-uppercase d-flex justify-content-center align-items-center">
+          <div class="slide-content d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 pb-3 text-center text-primary">
+                  <h1>FOOD & DRINKS</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 offset-md-3">
+                  <div class="row">
+                    <a class="col-6 col-md-4 text-center" href="https://api.whatsapp.com/send?phone=5491132552270&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                      <img class="img-fluid" src="img/logos/lardo_rosemary.png"/>
+                    </a>
+                    <a class="col-6 col-md-4 text-center" href="https://api.whatsapp.com/send?phone=5491136190077&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                      <img class="img-fluid" src="img/logos/atte.png"/>
+                    </a>
+                    <a class="col-6 col-md-4 text-center"href="https://api.whatsapp.com/send?phone=5491134145683&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                      <img class="img-fluid" src="img/logos/letitvi.png"/>
+                    </a>
+                  </div>
+                  <div class="row">
+                    <a class="col-6 col-md-4 text-center"href="https://api.whatsapp.com/send?phone=5491163372143&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                      <img class="img-fluid" src="img/logos/zetta.png"/>
+                    </a>
+                    <a class="col-6 col-md-4 text-center"href="https://www.appbar.com.ar/producto/132?utm_source=external&utm_medium=beers&utm_campaign=bud-always-on&utm_term=230420" target="_blank">
+                      <img class="img-fluid" src="img/logos/budweiser.png"/>
+                    </a>
+                    <a class="col-6 col-md-4 text-center" href="https://api.whatsapp.com/send?phone=5491133428915&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                      <img class="img-fluid" src="img/logos/copadecorcho.png"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 pt-4 text-center">
+                  <p class="text-primary mb-0">Obtené tu descuento especial mencionando <span class="text-bold">Highlife</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide text-uppercase d-flex justify-content-center align-items-center">
+          <div class="slide-content d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h1 class="mb-4">DANCEFLOOR</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 offset-md-3">
+                  <div class="row">
+                    <a class="col-10 offset-1 col-md-4 offset-md-4 text-center" href="https://us02web.zoom.us/j/2889454190" target="_blank">
+                      <img class="img-fluid img-thumbnail rounded-circle w-100 noshift" src="img/logos/zoom.png"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 pt-4 text-center">
+                  <p class="text-primary mb-0">Toca el botón para entrar a zoom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide text-uppercase d-flex justify-content-center align-items-center">
+          <div class="slide-content d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h1 class="mb-4">DONATE</h>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 offset-md-3">
+                  <div class="row">
+                    <div class="col-6 text-center">
+                      <img class="img-fluid img-thumbnail noshift w-100" src="img/mp_qr.png"/>
+                      <p class="pt-2">Con la App de Mercado pago</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <img class="img-fluid img-thumbnail noshift w-100" src="img/paypal_qr.png"/>
+                      <p class="pt-2">Con Paypal</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 pt-4 text-center">
+                  <p class="text-primary mb-0">Agradecemos tu colaboración con los artistas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/plugins/swiper.min.js"></script>
+  <script src="vendor/plugins/jquery.instagramFeed.js"></script>
+  <script src="js/live.js"></script>
 
 </body>
 </html>
