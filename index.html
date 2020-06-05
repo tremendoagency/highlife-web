@@ -10,245 +10,160 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/plugins/swiper.min.css" rel="stylesheet">
-  <link href="vendor/plugins/aos.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 	<!-- for Facebook -->
-	<meta property="og:title" content="Highlife Virtual – 16 de Mayo / Live 18hs"/>
+	<meta property="og:title" content="Highlife Virtual – 13 de Junio / Live 18hs"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://highlife.la/img/facebook.png"/>
   <meta property="og:url" content="http://highlife.la"/>
-	<meta property="og:description" content="El Sábado 16 de Mayo haremos nuestra primer Highlife Virtual, un espacio digital en donde distintos artistas del universo musical, visual y performático realizarán sus actuaciones de manera remota."/>
-	<meta name="description" content="El Sábado 16 de Mayo haremos nuestra primer Highlife Virtual, inaugurando nuestro espacio digital en donde distintos artistas del universo musical, visual y performático realizarán sus actuaciones de manera remota. Convocamos a un fundraiser para que todos podamos contribuir con ellos voluntariamente.">	
+	<meta property="og:description" content="El Sábado 13 de Junio haremos nuestra tercer Highlife Virtual, un espacio digital en donde distintos artistas del universo musical, visual y performático realizarán sus actuaciones de manera remota."/>
+	<meta name="description" content="El Sábado 13 de Junio haremos nuestra tercer Highlife Virtual, inaugurando nuestro espacio digital en donde distintos artistas del universo musical, visual y performático realizarán sus actuaciones de manera remota. Convocamos a un fundraiser para que todos podamos contribuir con ellos voluntariamente.">	
 </head>
 
 <body id="page-top">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container p-0">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logos/navbar-brand.svg"/></a>
-      <button class="navbar-toggler navbar-toggler" type="button">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3 js-scroll-trigger" href="#home">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3 js-scroll-trigger" href="#lineup">artistas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3 js-scroll-trigger" href="#guide">guía</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3 js-scroll-trigger" href="#foodanddrinks">food & drinks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase px-0 mx-0 ml-md-3 js-scroll-trigger" href="#share">compartí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase px-0 mx-0 mx-md-3 js-scroll-trigger" style="color: #e5678b;" href="live.html">⬤ live</a>
-          </li>
-        </ul>
+  <nav id="navbar">
+    <div class="navbar-inner d-flex justify-content-between align-items-center p-5">
+      <a class="navbar-logo" href="index.html"><img class="img-fluid" src="img/logos/navbar-brand.svg"/></a>
+      <div id="navbar-toggler" class="d-md-none">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      <ul class="navbar-nav d-none d-md-flex flex-row text-uppercase">
+          <li class="nav-item active pl-4">
+              <a href="#" data-slide="0">Home</a>
+          </li>
+          <li class="nav-item pl-4">
+              <a href="#" data-slide="1">Artists</a>
+          </li>
+          <li class="nav-item pl-4">
+              <a href="#" data-slide="2">Food & Drinks</a>
+          </li>
+          <li class="nav-item pl-4">
+              <a href="#" data-slide="3">Acompañan</a>
+          </li>
+      </ul>
     </div>
   </nav>
-  <div class="mobile-navbar h-100 d-flex align-items-center justify-content-center">
+  <div class="mobile-navbar h-100 d-flex align-items-center justify-content-center text-center">
     <div class="text-uppercase">
-      <a class="d-block js-scroll-trigger" href="#home">home</a>
-      <a class="d-block js-scroll-trigger ml-4" href="#lineup">artistas</a>
-      <a class="d-block js-scroll-trigger" href="#guide">guía</a>
-      <a class="d-block js-scroll-trigger ml-4" href="#foodanddrinks">food & drinks</a>
-      <a class="d-block js-scroll-trigger" href="#share">compartí</a>
-      <!--<a class="d-block js-scroll-trigger ml-4" style="color: #e5678b;" href="live.html">live</a>-->
+      <a class="d-block js-scroll-trigger slide-to" href="#home" data-slide="0">inicio</a>
+      <a class="d-block js-scroll-trigger slide-to" href="#team" data-slide="1">equipo</a>
+      <a class="d-block js-scroll-trigger slide-to" href="#team" data-slide="2">acerca</a>
     </div>
   </div>
 
-  <!-- Header -->
-  <header class="page-section h-100 d-flex align-items-center" id="home">
-    <div class="shape d-flex align-items-center justify-content-center rellax" data-rellax-speed="-2">
-      <img src="img/shape01.png"/>
-    </div>
-    <div class="container shrink">
-      <div class="date col-12 col-lg-6 offset-lg-6 text-left">
-        <div class="row d-flex d-lg-none justify-content-center">
-          <h1 class="text-uppercase my-0">16 de Mayo</h1>
+  <div class="swiper-container h-100">
+    <div class="swiper-wrapper" data-spy="scroll" data-target="#mainNav" data-offset="0">
+      <!-- Header -->
+      <div class="swiper-slide col-12 offset-1 d-flex align-items-center" id="home">
+        <div class="col-inner d-flex flex-column justify-content-center w-100">
+          <div><h1 class="text-uppercase my-0">16 de Mayo</h1></div>
+          <div class="gradient my-5 h-50 w-100"></div>
+          <div><h1 class="text-uppercase text-right"><span class="text-primary">•</span> LIVE 18hs</h1></div>
         </div>
-        <div class="row d-flex d-lg-none justify-content-center">
-          <h1 class="text-uppercase my-0 dl-2"><span style="color: red;">•</span> LIVE 18hs</h1>
+        
+        <!-- <div class="iawol rellax d-none d-sm-block" data-rellax-speed="1">
+          <div class="inner rotating"></div>
         </div>
-        <div class="row d-none d-lg-flex">
-          <h1 class="text-uppercase my-0">16 de Mayo</h1>
-        </div>
-        <div class="row d-none d-lg-flex pl-2">
-          <h1 class="text-uppercase my-0 pl-5 ml-5"><span class="text-primary">•</span> LIVE 18hs</h1>
-        </div>
+        <div class="scroll rellax text-uppercase" data-rellax-speed="-0.25">
+          scroll
+        </div> -->
       </div>
-      <div class="iawol rellax d-none d-sm-block" data-rellax-speed="1">
-        <div class="inner rotating"></div>
-      </div>
-      <div class="scroll rellax text-uppercase" data-rellax-speed="-0.25">
-        scroll
-      </div>
-    </div>
-  </header>
 
-  <!-- Line Up -->
-  <section class="page-section d-flex align-items-center" id="lineup">
-    <div class="container py-md-5 aos-item" data-aos="fade-up" data-aos-offset="10" data-aos-easing="ease-in-sine" data-aos-duration="600">
-      <div class="col-12 col-md-7 offset-md-3 py-md-5 text-uppercase">
-        <h1 class="my-0"><a href="https://www.instagram.com/trepanado/" target="_blank">Trepanado (BR)</a></h1>
-        <h1 class="my-0"><a class="dl-2" href="https://soundcloud.com/crownruler" target="_blank">Jimi Dawg (AU)</a></h1>
-        <h1 class="my-0"><a href="https://www.instagram.com/estupendomusica/" target="_blank">Estupendo (Live)</a></h1>
-        <h1 class="my-0"><a class="dl-2" href="https://www.instagram.com/goodlucktoyourdad/" target="_blank">Adriana (AU)</a></h1>
-        <h1 class="my-0"><a class="dl-1" href="https://www.instagram.com/dobaomusic" target="_blank">Dobao</a></h1>
-        <h1 class="my-0"><a class="dl-3" href="https://soundcloud.com/palazzo-music" target="_blank">Palazzo</a></h1>
-        <h1 class="my-0"><a href="https://www.instagram.com/wax_and_smoke/" target="_blank">Wax & Smoke</a></h1>
-        <h1 class="my-0"><a class="dl-1" href="https://soundcloud.com/fatal_ne" target="_blank">Fatal (UY)</a></h1>
-        <h1 class="my-0"><a href="https://soundcloud.com/furorexotica" target="_blank">Furor Exotica (Live)</a></h1>
-        <h1 class="my-0"><a class="dl-1" href="https://www.instagram.com/paulsende/" target="_blank">Paul Sende</a></h1>
-        <h1 class="my-0"><a class="dl-2" href="https://www.instagram.com/puntorua/" target="_blank">Punto Rua</a></h1>
-        <h1 class="my-0"><a class="dl-1" href="https://www.instagram.com/agustincibeira/" target="_blank">Agustin Cibeira</a></h1>
-        <h1 class="my-0"><a class="dl-2" href="https://www.instagram.com/myersalan/" target="_blank">Alan Myers</a>
-        <h1 class="my-0"><a href="https://www.instagram.com/tian.aviardi/" target="_blank">Tian Aviardi</a>
-        <h1 class="my-0"><a class="dl-2" href="https://www.instagram.com/annacartaya/" target="_blank">Anna Cartaya</a>
-        <h1 class="my-0"><a class="dl-3" href="https://www.instagram.com/juanjiant/" target="_blank">Juan Jiant</a>
-        <h1 class="my-0"><a class="dl-1" href="https://www.instagram.com/valen.vq/" target="_blank">Valen VQ</a>
+      <!-- Line Up -->
+      <div class="swiper-slide col-12 d-flex align-items-center" id="lineup">
+        <div class="container">
+          <div class="py-md-5 text-uppercase">
+            <h1 class="my-0 text-justify">
+              <a href="https://www.instagram.com/trepanado/" target="_blank">Millos Kaiser (br)</a> —
+              <a href="https://soundcloud.com/crownruler" target="_blank">Caio T (br)</a> —
+              <a href="https://www.instagram.com/estupendomusica/" target="_blank">Renata Do Valle (br)</a> —
+              <a href="https://www.instagram.com/goodlucktoyourdad/" target="_blank">Jay West</a> —
+              <a href="https://www.instagram.com/dobaomusic" target="_blank">Eternal Love (it)</a> —
+              <a href="https://soundcloud.com/palazzo-music" target="_blank">GIO (live)</a> —
+              <a href="https://www.instagram.com/wax_and_smoke/" target="_blank">Sandro</a> —
+              <a href="https://soundcloud.com/fatal_ne" target="_blank">Harari</a> —
+              <a href="https://soundcloud.com/furorexotica" target="_blank">Barbarelle</a> —
+              <a href="https://www.instagram.com/paulsende/" target="_blank">Juan Nasra + Joaquin Berman</a> —
+              <a href="https://www.instagram.com/puntorua/" target="_blank">Dimi 3000</a> —
+              <a href="https://www.instagram.com/agustincibeira/" target="_blank">INCUBA</a> —
+              <a href="https://www.instagram.com/myersalan/" target="_blank">T0n</a> —
+              <a href="https://www.instagram.com/tian.aviardi/" target="_blank">Estudio Sandro</a> —
+              <a href="https://www.instagram.com/annacartaya/" target="_blank">Humanimal</a> —
+              <a href="https://www.instagram.com/juanjiant/" target="_blank">Marfa Nekrasova & Gaby Moura</a> —
+              <a href="https://www.instagram.com/valen.vq/" target="_blank">VJ Wamba</a> —
+              <a href="https://www.instagram.com/valen.vq/" target="_blank">Ang Ortelli</a>
+            </h1>
+          </div>
         </div>
-    </div>
-  </section>
+      </div>
 
-  <!-- Guide -->
-  <section class="page-section py-5" id="guide">
-    <div class="container py-5 aos-item" data-aos="fade-up" data-aos-offset="10" data-aos-easing="ease-in-sine" data-aos-duration="600">
-      <div class="row py-4">
-        <div class="col-8 offset-2">
-          <div class="row justify-content-center text-center">
-            <h1 class="text-uppercase">Guía para disfrutar de #highlifevirtual</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-8 offset-2">
-          <div class="row justify-content-center text-center">
-            <h4 class="text-uppercase">Lookeate</h4>
-            <h4 class="font-light">
-              Preparate para una noche especial. Chequea el placard y elegí ese outfit que te hace brillar.
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-8 offset-2">
-          <div class="row justify-content-center text-center">
-            <h4 class="text-uppercase">Armá tu pista de baile en casa</h4>
-            <h4 class="font-light">
-              Bajá las luces, conectá el sonido a los parlantes y preparate para varias horas de baile! 
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-8 offset-2">
-          <div class="row justify-content-center text-center">
-            <h4 class="text-uppercase">Tené tu barra preparada</h4>
-            <h4 class="font-light">
-              Elegí lo que quieras tomar y comer, pedilo a través de nuestros restaurantes y distribuidores amigos con descuento mencionado a Highlife.
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-8 offset-2">
-          <div class="row justify-content-center text-center">
-            <h4 class="text-uppercase">Sumate a nuestra pista virtual</h4>
-            <h4 class="font-light">
-              Entra junto a tus amigos a nuetro canal de zoom para vivir la experiencia completa.
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-8 offset-2">
-          <div class="row justify-content-center text-center">
-            <h4 class="text-uppercase">Dalo todo</h4>
-            <h4 class="font-light">
-              Depende solo de nosotros generar algo distinto en estos tiempos dificiles.<br/>Encontrémosnos para bailar y conectar!
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section h-100 d-flex align-items-center" id="foodanddrinks">
-    <div class="container py-5 aos-item" data-aos="fade-up" data-aos-offset="10" data-aos-easing="ease-in-sine" data-aos-duration="600">
-      <div class="row">
-        <div class="col-10 offset-1 pb-3 text-center">
-          <h4 class="text-uppercase text-secondary">
-            Hacé tu pedido con anticipación
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-10 offset-1 col-md-8 offset-md-2">
+      <div class="swiper-slide col-12 d-flex align-items-center" id="foodanddrinks">
+        <div class="container">
           <div class="row">
-            <a class="col-6 col-md-4 text-center" href="https://api.whatsapp.com/send?phone=5491136190077&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
-              <img class="img-fluid" src="img/logos/atte.png"/>
-            </a>
-            <a class="col-6 col-md-4 text-center" href="https://api.whatsapp.com/send?phone=5491132552270&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
-              <img class="img-fluid" src="img/logos/lardo_rosemary.png"/>
-            </a>
-            <a class="col-6 col-md-4 text-center"href="https://api.whatsapp.com/send?phone=5491163372143&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
-              <img class="img-fluid" src="img/logos/zetta.png"/>
-            </a>
-            <a class="col-6 col-md-4 text-center"href="https://www.appbar.com.ar/producto/132?utm_source=external&utm_medium=beers&utm_campaign=bud-always-on&utm_term=230420" target="_blank">
-              <img class="img-fluid" src="img/logos/budweiser.png"/>
-            </a>
-            <a class="col-6 col-md-4 text-center"href="https://www.appbar.com.ar/producto/132?utm_source=external&utm_medium=beers&utm_campaign=bud-always-on&utm_term=230420" target="_blank">
-              <img class="img-fluid" src="img/logos/copadecorcho.png"/>
-            </a>
-            <a class="col-6 col-md-4 text-center"href="https://api.whatsapp.com/send?phone=5491134145683&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
-              <img class="img-fluid" src="img/logos/letitvi.png"/>
-            </a>
+            <div class="col-12 pb-3 text-center">
+              <h4 class="text-uppercase text-secondary">
+                Hacé tu pedido con anticipación
+              </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8 offset-2 col-md-12 offset-md-0">
+              <div class="row">
+                <a class="col-6 col-md text-center" href="https://api.whatsapp.com/send?phone=5491136190077&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                  <img class="img-fluid" src="img/logos/atte.png"/>
+                </a>
+                <a class="col-6 col-md text-center"href="https://api.whatsapp.com/send?phone=5491163372143&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                  <img class="img-fluid" src="img/logos/zetta.png"/>
+                </a>
+                <a class="col-6 col-md text-center" href="https://api.whatsapp.com/send?phone=5491132552270&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                  <img class="img-fluid" src="img/logos/lardo_rosemary.png"/>
+                </a>
+                <a class="col-6 col-md text-center"href="https://www.appbar.com.ar/producto/132?utm_source=external&utm_medium=beers&utm_campaign=bud-always-on&utm_term=230420" target="_blank">
+                  <img class="img-fluid" src="img/logos/copadecorcho.png"/>
+                </a>
+                <a class="col-6 col-md text-center"href="https://api.whatsapp.com/send?phone=5491134145683&text=Hola! Quiero hacer un pedido a través de #HighlifeVirtual&source&data&app_absent" target="_blank">
+                  <img class="img-fluid" src="img/logos/letitvi.png"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 offset-1 col-md-8 offset-md-2 pt-4 text-center">
+              <p class="text-primary text-uppercase mb-0">Obtené tu descuento especial mencionando <span class="text-bold">Highlife</span></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-10 offset-1 col-md-8 offset-md-2 pt-4 text-center">
-          <p class="text-primary text-uppercase mb-0">Obtené tu descuento especial mencionando <span class="text-bold">Highlife</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer page-section h-100 d-flex align-items-center" id="share">
-    <div class="container">
-      <div class="shape d-flex align-items-center justify-content-center rellax" data-rellax-speed="-0.2">
-        <img src="img/shape02.png"/>
-      </div>
-      <div class="row align-items-center text-center aos-item" data-aos="fade-up" data-aos-offset="10" data-aos-easing="ease-in-sine" data-aos-duration="600">
-        <div class="col-10 offset-1">
-          <p class="text-uppercase font-light my-md-0">
-            Compartí tu experiencia en instagram con el hashtag:
-          </p>
-          <h1 class="text-uppercase">
-            #HighlifeVirtual
-          </h1>
+      <div class="swiper-slide col-12 d-flex align-items-center" id="share">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 offset-2">
+              <div class="row">
+                <a class="col-6 col-md text-center" href="https://www.instagram.com/budargentina/?hl=es-la" target="_blank">
+                  <img class="img-fluid" src="img/logos/budweiser.png"/>
+                </a>
+                <a class="col-6 col-md text-center"href="https://www.instagram.com/skyyvodkaargentina/?hl=es-la" target="_blank">
+                  <img class="img-fluid" src="img/logos/skyy.png"/>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-  <div class="pb-4 text-center">
-    <a class="small font-light text-secondary" href="http://tremendo.agency" target="_blank">made with <span><i class="fa fa-heart"></i></span> by tremendo</a>
+
   </div>
+
   <!-- JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/plugins/swiper.min.js"></script>
-  <script src="vendor/plugins/rellax.min.js"></script>
-  <script src="vendor/plugins/aos.js"></script>
   <script src="js/magic.js"></script>
 </body>
 </html>

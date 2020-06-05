@@ -89,15 +89,8 @@
     <div class="swiper-container d-flex align-items-center">
       <div class="parallax-bg" style="background-image:url(img/parallax.jpg)" data-swiper-parallax="-50%"></div>
       <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex justify-content-center align-items-center">
-          <div class="slide-content d-flex">
-            <div class="video">
-              <iframe class="noshift" width="100%" height="100%" src="https://player.twitch.tv/?channel=highlifebsas" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
-            </div>
-            <div class="chat d-none d-sm-block">
-              <iframe class="noshift" width="100%" height="100%" src="https://www.twitch.tv/embed/highlifebsas/chat" frameborder="0"></iframe>
-            </div>
-          </div>
+        <div id="video" class="swiper-slide w-100 h-100">
+          <div class="slide-content d-flex align-items-center">
         </div>
         <div class="swiper-slide text-uppercase d-flex justify-content-center align-items-center">
           <div class="slide-content d-flex align-items-center">
@@ -204,8 +197,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/plugins/swiper.min.js"></script>
-  <script src="vendor/plugins/jquery.instagramFeed.js"></script>
+  <script src='https://meet.jit.si/external_api.js'></script>
   <script src="js/live.js"></script>
-
 </body>
 </html>

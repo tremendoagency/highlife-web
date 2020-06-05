@@ -1,52 +1,43 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
+  // Responsive Nav
 
-  // Makes shapes floats
-  var rellax = new Rellax('.rellax');
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.mobile-navbar').removeClass('show');
-  });
-
-  $('.navbar-toggler').click(function() {
+  $('#navbar-toggler').click(function() {
+    $(this).toggleClass('open');
     $('.mobile-navbar').toggleClass('show');
-    $('.navbar-toggler i').toggleClass('fa-times');
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
+  $('nav li a, .mobile-navbar a').on( "click", function(event){
+    event.preventDefault();
+    navigation.slideTo($(this).attr('data-slide'));
+    $('.mobile-navbar').removeClass('show');
+    $('#navbar-toggler').removeClass('open');
   });
 
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 150) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
+  var navigation = new Swiper('.swiper-container', {
+    speed: 1000,
+    spaceBetween: 0,
+    freeMode: true,
+    slidesPerView: 'auto',
+    grabCursor: true,
+    navigation: {
+      nextEl: '.move-right',
+      prevEl: '.move-left',
     }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
+  });
 
-  AOS.init();
+  // $('.swiper-wrapper').mousemove(function(event){
+  //   if (event.pageX <= $(window).width()/3){
+  //     navigation.translateTo(navigation.width, 5000);
+  //   }
+  //   else if (event.pageX >= ($(window).width()/3)*2){
+  //     navigation.translateTo(-navigation.width, 5000);
+  //   }
+  //   else{
+  //     navigation.translateTo(navigation.getTranslate(), 0);
+  //   }
+  // });
+
 
 })(jQuery); // End of use strict

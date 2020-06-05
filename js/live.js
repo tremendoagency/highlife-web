@@ -20,11 +20,17 @@
     //swiper
   
     var live = new Swiper('#live .swiper-container', {
-      speed: 1000,
+      effect: 'coverflow',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
       grabCursor: true,
-      parallax: true,
       centeredSlides: true,
-      slidesPerView: '1',
+      slidesPerView: 'auto',
       keyboard: {
         enabled: true,
         onlyInViewport: false
@@ -46,17 +52,38 @@
         setTimeout(innerSlide.swiper.slideNext(), 2000);
       }
     }
-  
-    $.instagramFeed({
-      //'username': 'highlifebsas',
-      'tag': 'highlifevirtual',
-      'container': "#instafeed",
-      'display_profile': false,
-      'display_gallery': true,
-      'items': 4,
-      'items_per_row': 4,
-      'margin': 0,
-    });
+    
+    // Video
+
+    
+    const domain = 'meet.jit.si';
+    const parentElement = document.querySelector("#video");
+    const meetingName = 'TremendoLiveExample';
+    var options = {
+      roomName: meetingName,
+      width: "100%",
+      height: "100%",
+      parentNode: parentElement,
+      //configOverwrite: {
+      //  prejoinPageEnabled: true,
+      //  requireDisplayName: true,
+      //},
+      interfaceConfigOverwrite: {
+        filmStripOnly: true
+        //DEFAULT_BACKGROUND: '#FFFFFF',
+        //VIDEO_QUALITY_LABEL_DISABLED: true,
+        //LANG_DETECTION: true,
+        //TOOLBAR_BUTTONS: ['tileview'],
+        //SHOW_JITSI_WATERMARK: false,
+        //JITSI_WATERMARK_LINK: 'https://jitsi.org',
+        //SHOW_WATERMARK_FOR_GUESTS: false,
+        //SHOW_BRAND_WATERMARK: false,
+        //BRAND_WATERMARK_LINK: '',
+        //SHOW_CHROME_EXTENSION_BANNER: false,
+      }
+    }
+    const api = new JitsiMeetExternalAPI(domain, options);
+
     $(window).on('load', function () {
       $('.loader-wrapper').animate({left: '-100%'}, 2000, function() {
         $('#loader').animate({left: '-100%'}, 2000);
