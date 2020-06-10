@@ -468,7 +468,8 @@ a.text-secondary:focus, a.text-secondary:hover {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  background-image:url(../img/gradient02.jpg);
+  background-color: #fff;
+  /* background-image:url(../img/gradient02.jpg); */
 }
 #loader .loader-wrapper{
   width: 200%;
