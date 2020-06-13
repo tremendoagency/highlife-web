@@ -110,7 +110,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #000;
+  color: #ffcc66;
   text-decoration: none;
 }
 p, h1, h2, h3, h4, h5, h6{
@@ -135,6 +135,9 @@ h6{
 }
 .text-primary {
   color: #ffcc66 !important;
+}
+a.text-primary:focus, a.text-primary:hover {
+  color: #ffcc66!important;
 }
 .text-secondary{
   color: #cc6666 !important;

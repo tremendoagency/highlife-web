@@ -8,7 +8,7 @@
     $('.mobile-navbar').toggleClass('show');
   });
 
-  $('nav li a, .mobile-navbar a').on( "click", function(event){
+  $('nav li a.slide-to, .mobile-navbar a.alide-to').on( "click", function(event){
     event.preventDefault();
     navigation.slideTo($(this).attr('data-slide'));
     $('.mobile-navbar').removeClass('show');
